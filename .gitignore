@@ -1,0 +1,92 @@
+# ──────────────────────────────────────────
+# Python / Backend
+# ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# pytest
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# mypy / pyright
+.mypy_cache/
+.pyright/
+pyrightconfig.json
+
+# Alembic (keep versions/, ignore generated pycache inside)
+# versions/ is committed; generated __pycache__ is ignored via __pycache__/ above
+
+# ──────────────────────────────────────────
+# Node / Frontend
+# ──────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+front-end/dist/
+front-end/build/
+
+# Vite cache
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# ──────────────────────────────────────────
+# Environment & secrets
+# ──────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+# keep examples
+!.env.example
+
+# ──────────────────────────────────────────
+# Docker
+# ──────────────────────────────────────────
+# Docker override files with local secrets
+docker-compose.override.yml
+
+# ──────────────────────────────────────────
+# OS / Editor
+# ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ──────────────────────────────────────────
+# Data / uploads (local dev artefacts)
+# ──────────────────────────────────────────
+data/
+uploads/
