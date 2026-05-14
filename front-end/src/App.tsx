@@ -63,7 +63,7 @@ export default function App() {
   const toastTimers = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map())
 
   const addToast = useCallback((message: string, type: ToastItem['type'] = 'info') => {
-    const id = crypto.randomUUID()
+    const id = crypto.randomUUID?.() ?? Math.random().toString(36).slice(2) + Date.now().toString(36)
     setToasts((prev) => [...prev, { id, message, type }])
     const timer = setTimeout(() => {
       setToasts((prev) => prev.filter((t) => t.id !== id))
