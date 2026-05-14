@@ -8,3 +8,10 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv
 }
+
+interface Window {
+  __ENV__?: {
+    VITE_API_BASE?: string
+    VITE_API_KEY?: string
+  }
+}

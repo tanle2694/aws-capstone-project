@@ -27,12 +27,14 @@ export default function App() {
   const [apiBase, setApiBase] = useState(
     () =>
       localStorage.getItem('iv_api_base') ||
+      window.__ENV__?.VITE_API_BASE ||
       import.meta.env.VITE_API_BASE ||
       'http://localhost:8000',
   )
   const [apiKey, setApiKey] = useState(
     () =>
       localStorage.getItem('iv_api_key') ||
+      window.__ENV__?.VITE_API_KEY ||
       import.meta.env.VITE_API_KEY ||
       '',
   )
